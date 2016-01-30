@@ -1,0 +1,4 @@
+So...
+It works. But there are some things that are not quiet perfect. I bodged the turbineselection.m by defining the optimiseFactor again.
+Also so far it is only test for the glen kinlass site. Need to find some nice Digital Elevation Maps (DEM) to test.
+GraphicalDisplay need fixing. Probably just some simplified version will do.
