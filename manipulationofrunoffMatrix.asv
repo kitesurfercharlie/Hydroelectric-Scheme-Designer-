@@ -1,0 +1,19 @@
+clear runoffMatrix1
+% runoffMatrix1=zeros([size(runoffMatrix),365]);
+i=0;
+j=0;
+runoffMatrix1=0;
+for i=1:size(runoffMatrix,1)
+    for j=1:size(runoffMatrix,2)
+
+           if runoffMatrix(i,j)==0
+           runoffMatrix1(i,j,1:size(it,1))=0;
+           else
+           for zVar=1:1:10;
+               it(zVar,runoffMatrix(i,j));
+           runoffMatrix1(i,j,zVar)=it(zVar,runoffMatrix(i,j));
+           end
+    end
+    end
+end
+
