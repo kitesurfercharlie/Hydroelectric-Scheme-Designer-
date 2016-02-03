@@ -1,7 +1,7 @@
 %Take in initial info: turbine type, flow and speed
 %Turbine types : francisHi,francisMid,francisLo,kaplan,turgo,pelton
 
-function [QBank,speedBank,efficiencyMatrix] = hillcurves(turbineType,unitFlow,unitSpeed)
+function [efficiency] = hillcurves(turbineType,unitFlow,unitSpeed)
 
 %Francis Hi
 if turbineType==1
