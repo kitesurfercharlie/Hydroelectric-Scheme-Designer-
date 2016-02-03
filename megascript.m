@@ -90,7 +90,7 @@ if mean(FD1D)>0.1 && head(indexMapCellX,indexMapCellY,indexPowerHouse)>10
             turbineSelectionData(countNo,24)=indexPowerHouse;
 
 end
-            coarsepassprogress=(countNo/(174*234*2))*100
+            coarsepassprogress=(countNo/(174*234*2))*100;
             countNo=countNo+1;
         end
     end
@@ -142,7 +142,7 @@ turbineSelectionData=0;
             turbineSelectionData(countNo,24)=indexPowerHouse;
             
             
-            finepassprogress=(countNo/(fineDataLength))*100
+            finepassprogress=(countNo/(fineDataLength))*100;
             countNo=countNo+1;
     end
 
