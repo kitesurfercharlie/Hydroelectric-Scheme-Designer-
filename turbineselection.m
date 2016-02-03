@@ -142,7 +142,7 @@ modSpeed=turbineInfo(indexTurbine,4);
 
 
 
-actDiameterNotRounded= sqrt ((actFlow/modFlow) * (sqrt(modHead)/sqrt(actHead)) * modDiameter^2);
+actDiameterNotRounded= sqrt ((actFlow./modFlow) * (sqrt(modHead)./sqrt(actHead)) * modDiameter^2);
 
 %round the diameter to nearest 50mm
 
@@ -311,7 +311,7 @@ end
 end
 
 %Sort and select the top rated design
-
+optimiseFactor=-15;
 chosenData=sortrows(masterMatrix,optimiseFactor);
 chosenData=chosenData(1,:);
 
@@ -319,6 +319,6 @@ chosenData=chosenData(1,:);
 % 
 %  format short
 %  f = figure('Position',[200 200 750 750]);
-% cnames = {'Flow Rate (m3/s)','Pipe Diameter (m)','Pipe Material','Turbine Type (no)','Max Flow Rate (m3/s)','Max Power Generation (W)','Energy Generation (W-h)','Capacity Factor','rpm','Actual Diameter (m)','Turbine Cost (£)','Pipe Cost (£)','Generator Cost (£)','Payback (Years)','15 Year Profit (£)','Total Cost (£)','Total Return (£)','Intake Y','Intake X','Powerhouse Index','Static Head (m)','Pipe Length (m)'}; 
+% cnames = {'Flow Rate (m3/s)','Pipe Diameter (m)','Pipe Material','Turbine Type (no)','Max Flow Rate (m3/s)','Max Power Generation (W)','Energy Generation (W-h)','Capacity Factor','rpm','Actual Diameter (m)','Turbine Cost (ï¿½)','Pipe Cost (ï¿½)','Generator Cost (ï¿½)','Payback (Years)','15 Year Profit (ï¿½)','Total Cost (ï¿½)','Total Return (ï¿½)','Intake Y','Intake X','Powerhouse Index','Static Head (m)','Pipe Length (m)'}; 
 % % 
 %  t = uitable('Data',sortrows(masterMatrix,-15),'ColumnName',cnames,'Parent',f ,'Position',[1 1 750 750]);
